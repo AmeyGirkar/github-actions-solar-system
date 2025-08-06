@@ -52,7 +52,7 @@ jobs:
           run: npm install
 
         - name: Code Coverage 
-          Continue-on-error: true
+          continue-on-error: true
           run: npm run coverage
 
         - name: Upload code coverage result
@@ -61,5 +61,6 @@ jobs:
             name: Code-Coverage-Result
             path: coverage
             retention-days: 5 
+
 
 
